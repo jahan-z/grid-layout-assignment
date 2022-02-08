@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid class</title>
+</head>
+<style>
+    .container {
+        color: white;
+        background-color: white;
+        width: 90%;
+        margin: 50px;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(6, 15%);
+        grid-template-rows: 100px 100px 100px 100px 100px 100px 100px;
+        grid-gap: 20px;
+    }
+
+    .item1 {
+        background-color: rgb(208, 243, 10);
+        grid-column: span 2;
+    }
+
+    .item2 {
+        background-color: rgb(250, 6, 209);
+        text-align: right;
+        grid-column: span 4;
+    }
+
+    .item3 {
+        background-color: rgb(233, 12, 12);
+        grid-column: span 4;
+        grid-row: span 4;
+    }
+
+    .item4 {
+        background-color: rgb(12, 238, 99);
+        grid-column: span 2;
+        grid-row: span 4;
+
+
+    }
+
+    .item5 {
+        background-color: rgb(59, 8, 240);
+        grid-column: span 6;
+    }
+
+    #inergrid {
+        width: 80%;
+        grid-gap: 20px;
+        display: grid;
+        grid-template-columns: repeat(5, 20%);
+        grid-gap: 50px;
+        padding: 10px;
+
+
+    }
+
+    .item11 {
+        justify-content: center;
+        padding: 30px;
+
+    }
+
+    .item12 {
+        justify-content: center;
+        padding: 30px;
+
+    }
+
+    .item13 {
+        justify-content: center;
+        padding: 30px;
+
+    }
+
+    .item14 {
+        justify-content: center;
+        padding: 30px;
+
+    }
+
+    .item15 {
+        justify-content: center;
+        padding: 30px;
+
+    }
+    .footer{
+        border:1px solid black;
+        grid-column: span 6;
+        color:white;
+        text-align: center;
+        padding-top: 40px;
+        background-color: brown;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="item1">LOGO</div>
+        <div class="item2">MENU</div>
+        <div class="item3">Main</div>
+        <div class="item4">Aside</div>
+        <div class="item5">
+            <div id="inergrid">
+                <div class="item11">sponser</div>
+                <div class="item12">sponser</div>
+                <div class="item13">sponser</div>
+                <div class="item14">sponser</div>
+                <div class="item15">sponser</div>
+
+            </div>
+        </div>
+        <div class="footer">footer</div>
+
+    </div>
+</body>
+
+</html>
